@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Website</title>
+    <style media="screen">
+      fieldset{background: lightyellow;
+      border-color: yellow;
+    border-style: solid;
+  border-width: 10px;
+margin-bottom: 10px;
+width: 720px;}
+.form label{width: 180px;
+display: inline-block;
+text-align: right;
+text-align: top;
+}
+#contact  {width: auto;}
+#gender {width: auto;}
+textarea {width: 360px;
+height:50px;}
+
+    </style>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Website!</h1>
+    <form class="form" action="destination" method="post">
+      <fieldset><legend>Your Face</legend>
+    <label for="avatar">  Your image :</label><input type="file" name="avatar" id="avatar" required> <br>
+    <label for="img">Image preview :</label>  <img id="preview" src="" alt="" />
+    </fieldset>
+    <fieldset><legend>Your General Details</legend>
+  <label for="name">Name:</label> <input type="text" name="name" id="name" value="Your full name"required> <br>
+  <label for="gender">Gender:</label> <input type="radio" id="gender" name="gender" value="male"required >Male
+    <input type="radio" id="gender" name="gender" value="female" required >Female <br>
+  <label for="age">Age:</label><input type="number" min="0" max="99" name="age" value="18"> <br>
+<label for="date">Date of birth:</label> <input type="date" name="bdaytime"> <br>
+<label for="color">Favorite Color:</label><input type="color" name="favcolor"> <br>
+<label for="country">Which country</label><select class="country" name="country">
+  <option value="NO">No selection</option>
+  <option value="UK">United Kingdom</option>
+  <option value="USA">United States of America</option>
+  <option value="TR">Turkey</option>
+  <option value="CA">Canada</option>
+  <option value="IT">Italy</option>
+  <option value="ES">Spain</option>
+
+</select></fieldset>
+  <fieldset><legend>Your Indicators</legend>
+  <label for="height">Height:</label>Short<input type="range" name="height" min="0" max="100" value="50">Tall <br>
+  <label for="salary">Salary:</label>Poor <input type="range" name="salary"min="0" max="100" value="50">Rich
+  </fieldset>
+  <fieldset><legend>Your Contact Information</legend>
+<label for="email">Email:</label><input type="email" name="email" value="" required> <br>
+<label for="mobile">Mobile:</label><input type="tel" name="mobile" value=""> <br>
+<label for="adress">Adress:</label>   <textarea value="Adress" rows="4" cols="40"></textarea> <br>
+<label for="contact">Method to contact you:</label><input type="radio" name="contact" value="email">Email
+<input type="radio" id="contact"  name="contact" value="whatsapp">Whatsapp
+<input type="radio" id="contact" name="contact" value="chat">In-app chat
+  </fieldset>
+<input type="submit" name="name" value="submit">
+    </form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+
+
+  </body>
+</html>
